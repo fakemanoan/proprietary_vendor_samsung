@@ -62,7 +62,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zerofltexx/proprietary/etc/nfc/sec_s3fwrn5p_rfreg.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/nfc/sec_s3fwrn5p_rfreg.bin \
     vendor/samsung/zerofltexx/proprietary/lib/egl/egl.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/egl/egl.cfg \
     vendor/samsung/zerofltexx/proprietary/lib/egl/libGLES_android.so:$(TARGET_COPY_OUT_SYSTEM)/lib/egl/libGLES_android.so \
-    vendor/samsung/zerofltexx/proprietary/lib/hw/camera.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.exynos5.so \
+    vendor/samsung/zerofltexx/proprietary/lib/hw/camera.vendor.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.exynos5.so \
     vendor/samsung/zerofltexx/proprietary/lib/hw/consumerir.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/consumerir.exynos5.so \
     vendor/samsung/zerofltexx/proprietary/lib/hw/sensors.universal7420.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensors.universal7420.so \
     vendor/samsung/zerofltexx/proprietary/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libExynosOMX_Core.so \
@@ -87,7 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zerofltexx/proprietary/lib/omx/libOMX.Exynos.VP9.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.VP9.Decoder.so \
     vendor/samsung/zerofltexx/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/zerofltexx/proprietary/lib64/egl/libGLES_android.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/egl/libGLES_android.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/hw/camera.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/camera.exynos5.so \
+    vendor/samsung/zerofltexx/proprietary/lib64/hw/camera.vendor.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/camera.vendor.exynos5.so \
     vendor/samsung/zerofltexx/proprietary/lib64/hw/consumerir.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/consumerir.exynos5.so \
     vendor/samsung/zerofltexx/proprietary/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/gps.default.so \
     vendor/samsung/zerofltexx/proprietary/lib64/hw/sensors.universal7420.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/sensors.universal7420.so \
