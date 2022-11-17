@@ -6,14 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/universal7420-common
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/universal7420-common/proprietary/lib/libbauthserver.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbauthserver.so \
-    vendor/samsung/universal7420-common/proprietary/lib/libbauthtzcommon.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbauthtzcommon.so \
-    vendor/samsung/universal7420-common/proprietary/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/universal7420-common/proprietary/lib/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsynaFpSensorTestNwd.so \
-    vendor/samsung/universal7420-common/proprietary/lib64/libbauthserver.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbauthserver.so \
-    vendor/samsung/universal7420-common/proprietary/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbauthtzcommon.so \
-    vendor/samsung/universal7420-common/proprietary/lib64/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/universal7420-common/proprietary/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsynaFpSensorTestNwd.so \
     vendor/samsung/universal7420-common/proprietary/vendor/app/FFFFFFFF000000000000000000000001.drbin:$(TARGET_COPY_OUT_VENDOR)/app/FFFFFFFF000000000000000000000001.drbin \
     vendor/samsung/universal7420-common/proprietary/vendor/app/mcRegistry/00060308060501020000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/00060308060501020000000000000000.tlbin \
     vendor/samsung/universal7420-common/proprietary/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07010000000000000000000000000000.tlbin \
@@ -46,6 +38,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7420-common/proprietary/vendor/app/mcRegistry/ffffffffd00000000000000000000017.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/ffffffffd00000000000000000000017.tlbin \
     vendor/samsung/universal7420-common/proprietary/vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
     vendor/samsung/universal7420-common/proprietary/vendor/app/mcRegistry/fffffffff0000000000000000000001e.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/fffffffff0000000000000000000001e.tlbin \
+    vendor/samsung/universal7420-common/proprietary/vendor/bin/gps.cer:$(TARGET_COPY_OUT_VENDOR)/bin/gps.cer \
+    vendor/samsung/universal7420-common/proprietary/vendor/bin/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/gpsd \
+    vendor/samsung/universal7420-common/proprietary/vendor/bin/lhd:$(TARGET_COPY_OUT_VENDOR)/bin/lhd \
     vendor/samsung/universal7420-common/proprietary/vendor/bin/mcDriverDaemon:$(TARGET_COPY_OUT_VENDOR)/bin/mcDriverDaemon \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/AzControlParams_SPEAKER.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/AzControlParams_SPEAKER.txt \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/BargeIn/Tx_ControlParams_WIDEBAND_ANALOG_DOCK.txt \
@@ -144,7 +139,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET_NREC_ON.txt \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_EARPIECE.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_EARPIECE.txt \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_SLD.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_SLD.txt \
-    vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_SPEAKER.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/WifiCallingHAC/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/mVoIP/Rx_ControlParams_NARROWBAND_BLUETOOTH_SCO_HEADSET.txt \
@@ -191,11 +185,73 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_SPEAKER.txt \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt \
     vendor/samsung/universal7420-common/proprietary/vendor/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nxp/mVoIPSec/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/hw/camera.vendor.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.exynos5.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/hw/consumerir.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.exynos5.so \
     vendor/samsung/universal7420-common/proprietary/vendor/lib/hw/nfc_nci.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.default.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/hw/sensors.universal7420.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.universal7420.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Core.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Resourcemanager.so \
     vendor/samsung/universal7420-common/proprietary/vendor/lib/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcClient.so \
     vendor/samsung/universal7420-common/proprietary/vendor/lib/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMcRegistry.so \
-    vendor/samsung/universal7420-common/proprietary/vendor/lib/soundfx/libLifevibes_lvverx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libLifevibes_lvverx.so \
-    vendor/samsung/universal7420-common/proprietary/vendor/lib/soundfx/libLifevibes_lvvetx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libLifevibes_lvvetx.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptX_encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthserver.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbauthtzcommon.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libegis_fp_normal_sensor_test.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libexynoscamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfloatingfeature.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libhwjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwjpeg.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistener.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynaFpSensorTestNwd.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libuniplugin.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/libwrappergps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwrappergps.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.AVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.AVC.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.AVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.AVC.Encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.HEVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.HEVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.VP8.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.VP8.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.VP8.Encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.VP9.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.WMV.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/hw/camera.vendor.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.vendor.exynos5.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/hw/consumerir.exynos5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.exynos5.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
     vendor/samsung/universal7420-common/proprietary/vendor/lib64/hw/nfc_nci.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/nfc_nci.default.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/hw/sensors.universal7420.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.universal7420.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Core.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Resourcemanager.so \
     vendor/samsung/universal7420-common/proprietary/vendor/lib64/libMcClient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcClient.so \
-    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcRegistry.so
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libMcRegistry.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMcRegistry.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libagc_max.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagc_max.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaptX_encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libegis_fp_normal_sensor_test.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libexynoscamera.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera3.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfloatingfeature.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libhr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhr.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libhwjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjpeg.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistener.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniplugin.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/libwrappergps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwrappergps.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.AVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.AVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.VP8.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.VP8.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.VP9.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
+    vendor/samsung/universal7420-common/proprietary/vendor/lib64/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.WMV.Decoder.so

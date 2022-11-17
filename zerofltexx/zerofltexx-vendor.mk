@@ -6,9 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/zerofltexx
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/zerofltexx/proprietary/bin/gps.cer:$(TARGET_COPY_OUT_SYSTEM)/bin/gps.cer \
-    vendor/samsung/zerofltexx/proprietary/bin/gpsd:$(TARGET_COPY_OUT_SYSTEM)/bin/gpsd \
-    vendor/samsung/zerofltexx/proprietary/bin/lhd:$(TARGET_COPY_OUT_SYSTEM)/bin/lhd \
     vendor/samsung/zerofltexx/proprietary/etc/firmware/clearwater-dsp3-tx-nb.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/clearwater-dsp3-tx-nb.bin \
     vendor/samsung/zerofltexx/proprietary/etc/firmware/clearwater-dsp3-tx-swb-interview.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/clearwater-dsp3-tx-swb-interview.bin \
     vendor/samsung/zerofltexx/proprietary/etc/firmware/clearwater-dsp3-tx-wb.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/clearwater-dsp3-tx-wb.bin \
@@ -60,58 +57,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zerofltexx/proprietary/etc/firmware/florida-dsp4-rx-anc-wb.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/florida-dsp4-rx-anc-wb.bin \
     vendor/samsung/zerofltexx/proprietary/etc/firmware/florida-dsp4-rx-anc-wb.wmfw:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/florida-dsp4-rx-anc-wb.wmfw \
     vendor/samsung/zerofltexx/proprietary/etc/nfc/sec_s3fwrn5p_rfreg.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/nfc/sec_s3fwrn5p_rfreg.bin \
-    vendor/samsung/zerofltexx/proprietary/lib/egl/egl.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/egl/egl.cfg \
-    vendor/samsung/zerofltexx/proprietary/lib/egl/libGLES_android.so:$(TARGET_COPY_OUT_SYSTEM)/lib/egl/libGLES_android.so \
-    vendor/samsung/zerofltexx/proprietary/lib/hw/camera.vendor.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.exynos5.so \
-    vendor/samsung/zerofltexx/proprietary/lib/hw/consumerir.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/consumerir.exynos5.so \
-    vendor/samsung/zerofltexx/proprietary/lib/hw/sensors.universal7420.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensors.universal7420.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Core.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libExynosOMX_Resourcemanager.so \
-    vendor/samsung/zerofltexx/proprietary/lib/libexynoscamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynoscamera.so \
-    vendor/samsung/zerofltexx/proprietary/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexynoscamera3.so \
-    vendor/samsung/zerofltexx/proprietary/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfloatingfeature.so \
-    vendor/samsung/zerofltexx/proprietary/lib/libhwjpeg.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhwjpeg.so \
-    vendor/samsung/zerofltexx/proprietary/lib/libprotobuf-cpp-fl24.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libprotobuf-cpp-fl24.so \
-    vendor/samsung/zerofltexx/proprietary/lib/libsensorlistener.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsensorlistener.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
-    vendor/samsung/zerofltexx/proprietary/lib/libuniplugin.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libuniplugin.so \
-    vendor/samsung/zerofltexx/proprietary/lib/libwrappergps.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwrappergps.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.AVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.AVC.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.AVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.AVC.Encoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.HEVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.HEVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.VP8.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.VP8.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.VP8.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.VP8.Encoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.VP9.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.VP9.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/omx/libOMX.Exynos.WMV.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/egl/libGLES_android.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/egl/libGLES_android.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/hw/camera.vendor.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/camera.vendor.exynos5.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/hw/consumerir.exynos5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/consumerir.exynos5.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/gps.default.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/hw/sensors.universal7420.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/sensors.universal7420.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/libExynosOMX_Core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Core.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/libExynosOMX_Resourcemanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosOMX_Resourcemanager.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/libexynoscamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libexynoscamera.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libexynoscamera3.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfloatingfeature.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/libhwjpeg.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhwjpeg.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/libprotobuf-cpp-fl24.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libprotobuf-cpp-fl24.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsensorlistener.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/libuniplugin.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libuniplugin.so \
-    vendor/samsung/zerofltexx/proprietary/lib64/libwrappergps.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwrappergps.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.AVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.AVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.VP8.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.VP8.Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.VP9.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/omx/libOMX.Exynos.WMV.Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/omx/libOMX.Exynos.WMV.Decoder.so \
     vendor/samsung/zerofltexx/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/zerofltexx/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin_a1:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin_a1 \
     vendor/samsung/zerofltexx/proprietary/vendor/etc/wifi/bcmdhd_ibss.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_ibss.bin \
@@ -164,9 +109,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/zerofltexx/proprietary/vendor/firmware/setfile_4e6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4e6.bin \
     vendor/samsung/zerofltexx/proprietary/vendor/firmware/setfile_6b2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_6b2.bin \
     vendor/samsung/zerofltexx/proprietary/vendor/firmware/setfile_imx240.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_imx240.bin \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
+    vendor/samsung/zerofltexx/proprietary/vendor/lib/libprotobuf-cpp-fl24.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-fl24.so \
+    vendor/samsung/zerofltexx/proprietary/vendor/lib/libprotobuf-cpp-nice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-nice.so \
+    vendor/samsung/zerofltexx/proprietary/vendor/lib/libprotobuf-cpp-shim.so:$(TARGET_COPY_OUT_VENDOR)/lib/libprotobuf-cpp-shim.so \
     vendor/samsung/zerofltexx/proprietary/vendor/lib/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril-dsds.so \
     vendor/samsung/zerofltexx/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so \
-    vendor/samsung/zerofltexx/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
+    vendor/samsung/zerofltexx/proprietary/vendor/lib/soundfx/libLifevibes_lvverx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libLifevibes_lvverx.so \
+    vendor/samsung/zerofltexx/proprietary/vendor/lib/soundfx/libLifevibes_lvvetx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libLifevibes_lvvetx.so \
+    vendor/samsung/zerofltexx/proprietary/vendor/lib64/libprotobuf-cpp-fl24.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-fl24.so \
+    vendor/samsung/zerofltexx/proprietary/vendor/lib64/libprotobuf-cpp-shim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-shim.so \
     vendor/samsung/zerofltexx/proprietary/vendor/lib64/libsec-ril-dsds.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril-dsds.so \
     vendor/samsung/zerofltexx/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so
